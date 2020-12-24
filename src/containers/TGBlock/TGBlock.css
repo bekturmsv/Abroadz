@@ -1,0 +1,11 @@
+.telegram-block{
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    background-color: #49d4d6;
+    padding: 60px;
+}
+.inner-tg-block{
+    margin: auto;
+    color: #000;
+}

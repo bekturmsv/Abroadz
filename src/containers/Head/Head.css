@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.head {
+    background-color: #68e8c9;
+    display: flex;
+    justify-content: space-between;
+    font-family: Monsterrat;
+    /* position: fixed top; */
+    position: fixed top;
+    top: 0;
+    /* right: 0; */
+    /* left: 0; */
+    z-index: 1030;
+    width: 100%;
+}
+
+.head ul {
+    line-height: 32px;
+}
+
+.head-list {
+    list-style: none;
+    margin: 0px;
+}
+
+.head-list li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.brands-icon {
+    color: black;
+    font-size: 17px;
+}
+
+.brands-icon:hover {
+    color: #fff;
+    transition: color 0.4s;
+}
+
+.cooperate {
+    list-style: none;
+    margin: 0;
+    padding: 0 40px 0 0;
+}
+
+.cooperate li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.cooperate-link {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-size: 17px;
+}
+@media screen and (max-width:411px){
+    .head{
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+.experience-main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card-experience{
+    background-color: #363636;
+    margin: 0 15px;
+    width: 30%;
+    height: 550px;
+    position: relative;
+    padding: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.card-experience:hover{
+    transform: translateY(-30px);
+
+}
+.card-text{
+    position: absolute;
+    top: 160px;
+    text-align: left;
+    /* padding: 0 25px; */
+    padding-left: 70px;
+    width: 70%;
+}
+
+.card-experience-title{
+    /* text-align: center; */
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.card-experience-description{
+    font-size: 1.2em;
+    color: #e0e0e0;
+    
+}
+
+.to-experience{
+    position: absolute;
+    top: 15px;
+    left:15px;
+    color: #fff;
+    border: 3px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: 500;
+    transition: background-color .5s;
+}
+
+.to-experience:hover{
+    background-color: #00a4f7 ;
+}
+
+.liked{
+    color: #00a4f7;
+}
+
+.likes{
+    position: absolute;
+    bottom: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid gray;
+    color: gray;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:411px){
+    .experience-main{
+        display: block;
+        
+    }
+    .card-experience{
+        width: 100% ;
+        margin: 0;
+    }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.img-block{
+    width: 50%;
+    text-align: center;
+}
+.img-block img {
+    width: 100%;
+}
+.main-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 100px;
+    
+}
+.info{
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    
+}
+.th{
+    margin-bottom: 15px;
+    
+}
+
+.info table {
+    margin: auto;
+    margin-top: 50px;
+}
+.title{
+    margin: auto;
+}
+.save-comment-btn{
+    text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px#49d4d6 inset, 0 0 0 0 #49d4d6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.save-comment-btn:hover{
+    box-shadow: 0 0 10px 0#49d4d6 inset, 0 0 10px 4px #49d4d6;
+  color:#000;
+}
+.comment-edit{
+    margin: 15px;
+    cursor: pointer;
+}

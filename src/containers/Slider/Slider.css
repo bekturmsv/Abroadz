@@ -1,0 +1,15 @@
+/* .slider{
+    width: 100%;
+}
+
+.slides{
+    position: relative;
+    width: 100%;
+    background-color: #000;
+} */
+.slider-img img{
+    width: 100%;
+}
+.carousel{
+    margin-top: 50px;
+}

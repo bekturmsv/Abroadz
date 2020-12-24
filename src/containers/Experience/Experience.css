@@ -1,0 +1,30 @@
+.main-exp{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.experience-header{
+    text-align: center;
+}
+.experience-title{
+    color: #000;
+    text-align: center;
+    width: 20%;
+    margin: auto; 
+    padding-bottom: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.blue-line{
+    background-color: #00a4f7;
+    width: 50px;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.experience-description{
+    color: #000;
+    line-height: 25px;
+    font-size: 18px;
+}

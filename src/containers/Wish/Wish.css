@@ -1,0 +1,17 @@
+.add-to-cart:hover{
+    color: #f44336;
+}
+.add-btn-wish{
+    border: none;
+    margin: 15px 0 ;
+    padding: 10px;
+    width: 20%;
+    background-color:#68e8c9 ;
+    color: #000;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.add-btn-wish:hover{
+    background-color:  #18998e ;
+    color: #fff;
+}

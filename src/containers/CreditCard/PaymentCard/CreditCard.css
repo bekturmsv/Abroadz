@@ -1,0 +1,119 @@
+.App-payment{
+    margin: 150px 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.form-group{
+    display: flex;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.form-control{
+    width: 50%;
+    height: 35px;
+    font-size: 1.2em;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.more{
+    width: 50%;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title{
+    width:50%;
+    margin: 0;
+}
+
+.title-valid{
+    margin-right: 10px;
+}
+.form-group span, .row span{
+    font-size: 1.2em;
+    color: gray;
+}
+
+.btn-pay{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: gray;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.inputs{
+    width: 30%;
+}
+.btn-pay:hover{
+    color: rgb(170, 178, 185);
+}
+@media screen and (max-width: 768px){
+    .card-div{
+        width: 100%;
+    }
+    .App-payment{
+        display:block;
+    }
+    .inputs{
+        display: block;
+    }
+    .form-control{
+        width: 100%;
+        display: block;
+    }
+    .form-group{
+        display: block;
+    }
+    .inputs{
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+        display: block;
+    }
+    .more{
+        width: 100%;
+    }
+    .total-sum{
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px){
+    .card-div{
+        width: 100%;
+    }
+    .App-payment{
+        display:block;
+    }
+    .inputs{
+        display: block;
+    }
+    .form-control{
+        width: 100%;
+        display: block;
+    }
+    .form-group{
+        display: block;
+    }
+    .inputs{
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+        display: block;
+    }
+    .more{
+        width: 100%;
+    }
+    .total-sum{
+        display: block;
+        width: 100%;
+    }
+}

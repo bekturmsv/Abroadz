@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nerko+One&display=swap');
+
+.run-line {
+    font-family: East Sea Dokdo;
+    width: 100%;
+}
+
+.back {
+    background-image: url('https://imgs.classicfm.com/images/61630?width=1000&crop=16_9&signature=UOxsAc4VhzNYQEIG-RTXur_mix8=');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    
+    
+    -webkit-animation: scroll 20s infinite linear;
+    -moz-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+
+.marquee {
+    /* width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -webkit-text-stroke: 1.8px #fff;
+    color: #FFF;
+    mix-blend-mode: multiply; */
+    width: 100%;
+    overflow: hidden;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    line-height: 150px;
+    text-transform: uppercase;
+    /* background-color: black; */
+    padding: 20px 0;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 10px;
+    color: transparent;
+    mix-blend-mode: multiply;
+    display: inline-block;
+}

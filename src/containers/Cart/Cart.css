@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.delete-btn-cart{
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all .5s;
+    border: none;
+    
+    background-color: gray;
+}
+.total-price{
+    margin-top: 20px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 1.3em;
+}
+.delete-btn-cart:hover{
+    background-color: gray;
+    color: #fff;
+}
+.btn-place-cart{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cart-empty-btn{
+  padding: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+}
+.cart-empty-btn:hover{
+  background-color: #202020;
+    color: #fff;
+}
+.pay-cart{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transition: all .5s;
+}
+
+.pay-cart:hover{
+    background-color: #202020;
+    color: #fff;
+}
+
+  section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cart-products{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  .card-in-cart {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;/* Ограничение ширины */
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 15px;
+  }
+  .card-in-cart img{
+      width: 100%;
+      height: 50%;
+  }
+  .img-in-cart {
+
+    width: 100%;
+  
+  }
+  .title-product-in-cart {
+    color: #7c4dff;
+  }
+  .description-product-in-cart {
+    padding: 4px;
+    font-size: 14px;
+    color: #757575;
+  }
+  .price-product-in-cart {
+    color: #d32f2f;
+    font-size: 18px;
+  }
+  .card-in-cart .delete-btn-cart {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: #fff;
+    background-color: #f44336;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .cart-products{
+      width: 100%;
+      display: flex;
+  }
+@media screen and (max-width:768px){
+    
+}
+
+
+@media screen and  (max-width: 375px){
+    
+}

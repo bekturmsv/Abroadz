@@ -1,0 +1,8 @@
+ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+.filter-list{
+    width: 100%;
+    text-align: center;
+}

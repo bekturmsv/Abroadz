@@ -1,0 +1,27 @@
+
+
+.img-block-search{
+    text-align: center;
+    width: 100%;
+}
+.img-block-search img {
+    width: 100%;
+}
+.product-card{
+    width: 30%;
+    margin: 15px;
+}
+
+@media screen and (max-width:768px){
+    .product-card{
+        width: 45%;
+    margin: 15px;
+    }
+}
+@media screen and (max-width: 375px){
+    .product-card{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
