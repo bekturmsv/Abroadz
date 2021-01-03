@@ -1,6 +1,7 @@
 .product-card-admin{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .cardd{
     width: 30%;

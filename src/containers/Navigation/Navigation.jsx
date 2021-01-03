@@ -48,12 +48,12 @@ const Navigation = () => {
                         <ul className="nav-more">
                             <li>
                                 <Link to="/search"> <FontAwesomeIcon icon={faSearch} className="icon" /></Link></li>
-                            <li><Badge badgeContent={productsCountInLiked} color="secondary" ><Link to="/wish"><FontAwesomeIcon icon={faBookmark} className="icon" /></Link></Badge></li>
-                            <li>
+                            <li><Link to="/wish"><Badge badgeContent={productsCountInLiked} color="secondary" ><FontAwesomeIcon icon={faBookmark} className="icon" /></Badge></Link></li>
+                            <li><Link to="/cart">
                                 <Badge badgeContent={ productsCountInCart} color="secondary" >
-                                    <Link to="/cart">
+                                    
                                         <FontAwesomeIcon icon={faShoppingBasket} className="icon" className="icon"></FontAwesomeIcon>
-                                    </Link></Badge></li>
+                                    </Badge></Link></li>
                             <li>
 
                                 <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} style={{ minWidth: '0', padding: '5px' }}>

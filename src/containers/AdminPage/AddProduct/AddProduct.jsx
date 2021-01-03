@@ -6,11 +6,11 @@ import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import { productContext } from '../../../contexts/ProductsContext';
-
+import './AddProduct.css'
 const useStyles = makeStyles((theme) => ({
     formControl: {
         margin: theme.spacing(1),
-        width: '17%'
+        width: '8%'
     },
     selectEmpty: {
         marginTop: theme.spacing(2),
@@ -24,6 +24,7 @@ const AddProduct = () => {
     const [description, setDescription] = React.useState('');
     const [country, setCountry] = React.useState('');
     const [type, setType] = React.useState('');
+    const [addShow, setAddShow] = useState(false)
 
     const handleChange = (event) => {
         setDescription(event.target.value);
@@ -82,17 +83,20 @@ const AddProduct = () => {
 
 
         <div className="add-product" style={{marginTop:'100px'}}>
+            
+            {addShow ? (
+                <>
             <h1 >Add product</h1>
             <input style={isError ? { borderColor: 'red' } : { borderColor: 'white' }}
                 value={img} onChange={(e) => setImg(e.target.value)}
                 type="text"
                 placeholder="Img"
-            />
+            /> <br/>
             <input style={isError ? { borderColor: 'red' } : { borderColor: 'white' }}
                 value={title} onChange={(e) => setTitle(e.target.value)}
                 type="text"
                 placeholder="Title"
-            />
+            /> <br/>
             <FormControl className={classes.formControl} >
                 <Select
                     style={{ textAlign: 'left' }}
@@ -112,7 +116,7 @@ const AddProduct = () => {
                     <MenuItem value="China">China</MenuItem>
                     <MenuItem value="Canada">Canada</MenuItem>
                 </Select>
-            </FormControl><br />
+            </FormControl>
             
                 <br />
             <input style={isError ? { borderColor: 'red' } : { borderColor: 'white' }}
@@ -151,7 +155,7 @@ const AddProduct = () => {
                     onChange={handleChange4}
                     displayEmpty
                     className={classes.selectEmpty}
-                    inputProps={{ 'aria-label': 'Without label' }}>
+                    inputProps={{ 'aria-label': 'Without label' }}> <br/>
                     <MenuItem value={type}>
                         <em>Type</em>
                     </MenuItem>
@@ -159,15 +163,17 @@ const AddProduct = () => {
                     <MenuItem value='Job'>Job</MenuItem >
                     <MenuItem value='Study'>Study</MenuItem >
 
-                </Select>
-            </FormControl>
+                </Select> <br/>
+            </FormControl> <br/>
             <input style={isError ? { borderColor: 'red' } : { borderColor: 'white' }}
                 value={price} onChange={(e) => setPrice(e.target.value)}
                 type="text"
-                placeholder="Price"
-            />
-            
+                placeholder="Price" 
+            /> <br/>
+            <button onClick={()=> setAddShow(false)}>Close</button> 
             <button variant="contained" onClick={handleClick} className="btn-add">Add Product</button>
+            </>) : (<><button onClick={()=> setAddShow(true)}>Добавить продукт</button></>)}
+            
         </div>
 
     );

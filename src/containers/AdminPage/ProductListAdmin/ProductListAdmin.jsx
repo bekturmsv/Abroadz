@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const ProductListAdmin = () => {
-    // const [state, setState]= useState([])
+    const [listShow, setListShow]= useState(false)
     const classes = useStyles();
 
 
@@ -65,7 +65,9 @@ const ProductListAdmin = () => {
         <>
 
             <div className="product-card-admin">
-                {products.map(item => (
+                {listShow ? (
+                    <>
+                    {products.map(item => (
                     <Card className={classes.root} key={item.id} className="cardd">
                         <CardHeader
                             title={<Typography variant="h5" align="center">{item.title}</Typography>}
@@ -88,11 +90,18 @@ const ProductListAdmin = () => {
                         </CardActions>
                     </Card>
                 ))}
-            </div>
+            
 
-
-            <Pagination onChange={(e, newpage) => pageAdmin(newpage)} page={parseInt(search.get("_page")) || 1} count={Math.ceil(totalCount / 3)} defaultPage={1} />
-
+           
+           <div style={{display: 'block', width: '100%', marginTop: '50px'}}> <Pagination onChange={(e, newpage) => pageAdmin(newpage)} page={parseInt(search.get("_page")) || 1} count={Math.ceil(totalCount / 3)} defaultPage={1} /> </div> <button onClick={()=>setListShow(false)}>Закрыть список</button>
+                    </>
+                ) : (
+                    <>
+                    <button onClick={()=> setListShow(true)}>Открыть список</button>
+                    </>
+                )}
+                
+</div>
 
         </>
     );
