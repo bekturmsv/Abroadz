@@ -21,7 +21,7 @@
 **`npx json-server --watch db.sjon --port 8000`**
 ### json-server - keyword 
 ### db.json - name of file as a database
-### 3000 - port on which the server will run
+### 8000 - port on which the server will run
 
 <br>
 
