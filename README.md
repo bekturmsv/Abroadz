@@ -18,6 +18,8 @@
 
 ## Json-server:
 ### in this project, there is its own fake database with a server called: json-server. In it you can create the same API queries as in the real database. All data are stored in json format. Enter the command to start the server:
+**`npm install json-server`**
+
 **`npx json-server --watch db.sjon --port 8000`**
 ### json-server - keyword 
 ### db.json - name of file as a database
