@@ -6,19 +6,19 @@
 
 ## Before launching it:
 ### you need to install all the libraries and modules used in this project, with the command:
-`npm install`
+**`npm install`**
 
 <br>
 
 ## React:
 ### After installing all the dependencies you can start the react:
-`npm start`
+**`npm start`**
 
 <br>
 
 ## Json-server:
 ### in this project, there is its own fake database with a server called: json-server. In it you can create the same API queries as in the real database. All data are stored in json format. Enter the command to start the server:
-`npx json-server --watch db.sjon --port 8000`
+**`npx json-server --watch db.sjon --port 8000`**
 ### json-server - keyword 
 ### db.json - name of file as a database
 ### 3000 - port on which the server will run
